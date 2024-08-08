@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="main-heading">To Do App</h1>
+    <div id="todo-container">
+      <input id="input-todo" type="text" placeholder="Enter a task here">
+      <input id="input-date" type="date">
+      <button id="getTasksBtn" onclick="addTodo()">ADD</button>
+    </div>
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Todo item</th>
+                <th>Status</th>
+                <th>Due Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="task-list">
+            <!-- Task list will be populated here by JavaScript -->
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
